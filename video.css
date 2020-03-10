@@ -8,10 +8,8 @@ html{
 *{
 	cursor:none !important;
 }
-video{
+iframe{
 	position:absolute;
-	height:auto;
-	width:79%;
 	top:50%;
 	left:50%;
 	transform: translate(-50%,-48%);
