@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="book.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+<!-- 	<link rel="shortcut icon" href="icon.png">
+	<title>Rachelkim</title> -->
+	<script src="web.js"></script>
+	<meta charset="UTF-8"></html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body><!-- 
+	<h1 class="top"><i>In defense of the poor image</i></h1> -->
+
+	<div class="cursor"></div>
+
+		<div class="nav">
+
+		<a href="index.html"><div class="web"></div></a>
+		<a href="video.html"><div class="video"></div></a>
+		<a href="book.html"><div class="book"></div></a>
+	</div>
+
+	<div class="webt">WEBPAGE</div>
+	<div class="videot">VIDEO</div>
+	<div class="bookt">BOOKLET</div>
+
+<div class="w3-content w3-display-container">
+	<img class="mySlides" src="book1.png">
+	<img class="mySlides" src="book2.png">
+	<img class="mySlides" src="book3.png">
+	<img class="mySlides" src="book4.png">
+	<img class="mySlides" src="book5.png">
+	<img class="mySlides" src="book6.png">
+	<img class="mySlides" src="book7.png">
+	<img class="mySlides" src="book8.png">
+	<img class="mySlides" src="book9.png">
+	<img class="mySlides" src="book10.png">
+	<img class="mySlides" src="book11.png">
+	<img class="mySlides" src="book12.png">
+
+
+	  	<button class="w3-button w3-black w3-display-left" id="left" onclick="plusDivs(-1)">&#10094;</button>
+  		<button class="w3-button w3-black w3-display-right" id="right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+		<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+</body>
